@@ -72,6 +72,11 @@ Contribuições são bem-vindas! Para contribuir:
 6.	Abra um Pull Request.
 # 📝Licença
 Este projeto está sob a licença MIT. Sinta-se à vontade para utilizá-lo e modificá-lo.
+# Referência usada:
+
+Livros:
+
+Python 3 Object-Oriented Programming Second edition Dusty Phillips.pdf
 ________________________________________
 # 🚀 Criado por :
 Matheus da Silva Xavier
