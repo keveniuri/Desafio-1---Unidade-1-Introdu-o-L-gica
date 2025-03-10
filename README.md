@@ -7,7 +7,7 @@ Este é um programa simples em Python que permite calcular a área e o perímetr
 # 🖥️instalação 
 Para rodar o programa, certifique-se de que o Python 3 está instalado no seu computador.
 1.	Clone este repositório: 
-2.	git clone https://github.com/seu-usuario/nome-do-repositorio.git
+2.	git clone https:(https://github.com/keveniuri/Desafio-1---Unidade-1-Introdu-o-L-gica/blob/main/README.md?plain=1)
 3.	Acesse a pasta do projeto: 
 4.	cd nome-do-repositorio
 5.	Execute o programa: 
