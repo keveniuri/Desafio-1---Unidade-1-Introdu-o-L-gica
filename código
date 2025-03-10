@@ -1,0 +1,56 @@
+from abc import ABC, abstractmethod
+
+class FormaGeometrica(ABC):
+    
+    @abstractmethod
+    def calcular_area(self):
+        pass
+    
+    @abstractmethod
+    def calcular_perimetro(self):
+        pass
+
+class Retangulo(FormaGeometrica):
+    def _init_(self, largura, altura):
+        self.largura = largura
+        self.altura = altura
+    
+    def calcular_area(self):
+        return self.largura * self.altura
+    
+    def calcular_perimetro(self):
+        return 2 * (self.largura + self.altura)
+
+class Circulo(FormaGeometrica):
+    def _init_(self, raio):
+        self.raio = raio
+    
+    def calcular_area(self):
+        return 3.1415 * (self.raio ** 2)
+    
+    def calcular_perimetro(self):
+        return 2 * 3.1415 * self.raio
+
+def obter_dados_usuario():
+    tipo = input("Digite o tipo de forma (retangulo ou circulo): ").lower()
+    
+    if tipo == "retangulo":
+        largura = float(input("Digite a largura do retângulo: "))
+        altura = float(input("Digite a altura do retângulo: "))
+        forma = Retangulo(largura, altura)
+    elif tipo == "circulo":
+        raio = float(input("Digite o raio do círculo: "))
+        forma = Circulo(raio)
+    else:
+        print("Forma não reconhecida. Tente novamente.")
+        return None
+    
+    return forma
+
+if _name_ == "_main_":
+    forma = obter_dados_usuario()
+    
+    if forma:
+        print(f"\n{forma._class.name_}:")
+        print(f"Área: {forma.calcular_area()}")
+        print(f"Perímetro: {forma.calcular_perimetro()}")
